@@ -12,7 +12,6 @@ body {
   align-items: center;
   overflow: hidden;
   margin: 0;
-  height: 100vh;
   font-family: "Hachi Maru Pop", cursive;
 }
 h1 {
@@ -113,11 +112,11 @@ h1 {
   font-weight: bold;
   padding: 15px 20px;
   position: absolute;
-  bottom: -50px;
+  bottom: -5px;
   transition: transform 0.3s ease-in-out;
 }
 .notification-container.show {
-  transform: translateY(-50px);
+  transform: translateY(55px);
 }
 .notification-container p {
   margin: 0;

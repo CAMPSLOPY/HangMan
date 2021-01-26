@@ -113,7 +113,7 @@ h1 {
   font-weight: bold;
   padding: 15px 20px;
   position: absolute;
-  bottom: -50px;
+  bottom: -0px;
   transition: transform 0.3s ease-in-out;
 }
 .notification-container.show {

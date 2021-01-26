@@ -10,9 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 90vh;
   overflow: hidden;
   margin: 0;
-  height: 100vh;
   font-family: "Hachi Maru Pop", cursive;
 }
 h1 {
@@ -112,13 +112,4 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 15px 20px;
-  position: absolute;
-  bottom: -50px;
-  transition: transform 0.3s ease-in-out;
-}
-.notification-container.show {
-  transform: translateY(-50px);
-}
-.notification-container p {
-  margin: 0;
 }

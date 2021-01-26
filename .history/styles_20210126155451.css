@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
+  background-color: hsl(212, 33%, 32%);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 80vh;
   overflow: hidden;
   margin: 0;
-  height: 100vh;
   font-family: "Hachi Maru Pop", cursive;
 }
 h1 {
@@ -76,7 +76,7 @@ h1 {
   right: 0;
   bottom: 0;
   /* display: flex; */
-  display: none;
+  /* display: none; */
   align-items: center;
   justify-content: center;
 }
@@ -104,21 +104,4 @@ h1 {
 }
 .popup button:focus {
   outline: 0;
-}
-.notification-container {
-  background-color: #ebfffa;
-  border-radius: 10px 10px 0 0;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  padding: 15px 20px;
-  position: absolute;
-  bottom: -50px;
-  transition: transform 0.3s ease-in-out;
-}
-.notification-container.show {
-  transform: translateY(-50px);
-}
-.notification-container p {
-  margin: 0;
 }

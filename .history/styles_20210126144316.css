@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(212, 33%, 32%);
+  color: #fff;
+}
+
+.figure-container {
+  fill: transparent;
+  stroke-width: 4px;
+  stroke: #fff;
+  stroke-linecap: round;
+}
+.figure-part {
+}

@@ -99,9 +99,6 @@ h1 {
   padding: 12px 20px;
 }
 
-.popup button:active {
-  transform: scale(0.92);
-}
-.popup button:focus {
-  outline: 0;
+.popup button:active{
+  transform: scale(0.3));
 }

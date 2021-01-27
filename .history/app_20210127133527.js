@@ -38,7 +38,7 @@ function displayWord() {
   // map() is used to return an array element with a func...
   // .join() is used to return array into a string...
 
-  const innerword = wordEl.innerText.replace(/\n/g, "");
+  const innerword = wordEl.innerText
 }
 
 displayWord();

@@ -7,15 +7,7 @@ const finalMessage = document.getElementById("final-message");
 const figureParts = document.querySelectorAll(".figure-part");
 
 // initiating the random game numbers and also its length
-const words = [
-  "application",
-  "wizard",
-  "programming",
-  "interface",
-  "messi",
-  "codebook",
-  "javascript",
-];
+const words = ['application','wizard'];
 const selectedWords = words[Math.floor(Math.random() * words.length)];
 
 // we need two arrays to store both the correct  and incorrect letters
@@ -26,19 +18,17 @@ const correctLetters = [];
 //  SHOW HIDDEN WORDS
 function displayWord() {
   wordEl.innerHTML = `${selectedWords
-    .split("")
+    .split('')
     .map(
       (letter) => `<span class ="letter">
     ${correctLetters.includes(letter) ? letter : ""}
     </span>`
     )
-    .join("")}`;
+    .join('')}`;
 
   // split() turns a string to an array...
   // map() is used to return an array element with a func...
   // .join() is used to return array into a string...
-
-  const innerword = wordEl.innerText.replace(/\n/g, "");
 }
 
 displayWord();

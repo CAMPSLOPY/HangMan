@@ -59,9 +59,8 @@ window.addEventListener("keydown", function (e) {
     } else {
       if (!wrongLetters.includes(letter)) {
         wrongLetters.push(letter);
-        updateWrongLettersEl();
-      } else {
-        showNotification();
+
+        upda
       }
     }
   }
@@ -69,12 +68,5 @@ window.addEventListener("keydown", function (e) {
 
 // show notification functions
 
-function showNotification() {
-  notification.classList.add("show");
-
-  //   set Timeout takes in a function and also a time duration
-  setTimeout(() => {
-    notification.classList.remove("show");
-  }, 2000);
-}
+function showNotification() {}
 displayWord();

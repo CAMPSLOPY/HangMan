@@ -47,7 +47,7 @@ window.addEventListener("keydown", function (e) {
   //   console.log(e.keyCode); the keycode is
   //    used to get number position of a keyboard element on the DOM
   if (e.keyCode >= 65 && e.keyCode <= 90) {
-    const letter = e.key;
+    const letter = e.keyCode;
 
     if (selectedWords.includes(letter)) {
       if (!correctLetters.includes(letter)) {

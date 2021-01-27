@@ -56,11 +56,7 @@ window.addEventListener("keydown", function (e) {
       } else {
         showNotification();
       }
-    } else {
-      if (!wrongLetters.includes(letter)) {
-        wrongLetters.push(letter);
-      }
-    }
+    }else
   }
 });
 

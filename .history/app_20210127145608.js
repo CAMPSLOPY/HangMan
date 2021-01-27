@@ -44,24 +44,9 @@ function displayWord() {
 
 // The KeyDown event (we will be able to press any keys on our keyboard)
 window.addEventListener("keydown", function (e) {
-  //   console.log(e.keyCode); the keycode is
-  //    used to get number position of a keyboard element on the DOM
-  if (e.keyCode >= 65 && e.keyCode <= 90) {
-    const letter = e.key;
+//   console.log(e.keyCode); the keycode is
+//    used to get number position of a keyboard element on the DOM
 
-    if (selectedWords.includes(letters)) {
-      if (!correctLetters.includes(letter)) {
-        correctLetters.push(letter);
-        displayWord();
-      } else {
-        showNotification();
-      }
-    } else {
-      if (!wrongLetters.includes(letter)) {
-        wrongLetters.push(letter);
-      }
-    }
-  }
 });
 
 displayWord();

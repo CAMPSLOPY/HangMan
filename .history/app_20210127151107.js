@@ -52,13 +52,6 @@ window.addEventListener("keydown", function (e) {
     if (selectedWords.includes(letters)) {
       if (!correctLetters.includes(letter)) {
         correctLetters.push(letter);
-        displayWord();
-      } else {
-        showNotification();
-      }
-    } else {
-      if (!wrongLetters.includes(letter)) {
-        wrongLetters.push(letter);
       }
     }
   }

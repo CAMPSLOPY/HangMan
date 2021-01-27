@@ -1,7 +1,7 @@
 const wordEl = document.getElementById("word");
 const wrongLettersEL = document.getElementById("wrong-letters");
 const playAgain = document.getElementById("play-button");
-const popUp = document.getElementById("popup-container");
+const popUP = document.getElementById("popup-container");
 const notification = document.getElementById("notification-container");
 const finalMessage = document.getElementById("final-message");
 const figureParts = document.querySelectorAll(".figure-part");
@@ -21,7 +21,7 @@ const selectedWords = words[Math.floor(Math.random() * words.length)];
 // we need two arrays to store both the correct  and incorrect letters
 
 const wrongLetters = [];
-const correctLetters = ["w", "i", "z", "a", "r", "d"];
+const correctLetters = ['w','i','z','a','rd'];
 
 //  SHOW HIDDEN WORDS
 function displayWord() {
@@ -39,13 +39,7 @@ function displayWord() {
   // .join() is used to return array into a string...
 
   const innerword = wordEl.innerText.replace(/\n/g, "");
-
-  if (innerword === selectedWords) {
-    finalMessage.innerText = "Congratulations! You Won 🤑";
-    popUp.style.display = "flex";
-  } else {
-    ("");
-  }
+  console.log(wordEl.innerHTML, wordEl.innerText);
 }
 
 displayWord();

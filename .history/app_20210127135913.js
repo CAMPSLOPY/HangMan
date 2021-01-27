@@ -42,7 +42,7 @@ function displayWord() {
 
   if (innerword === selectedWords) {
     finalMessage.innerText = "Congratulations! You Won 🤑";
-    popUp.style.display = "flex";
+    pop
   } else {
     ("");
   }

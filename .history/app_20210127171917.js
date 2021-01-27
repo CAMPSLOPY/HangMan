@@ -16,7 +16,7 @@ const words = [
   "codebook",
   "javascript",
 ];
-let selectedWords = words[Math.floor(Math.random() * words.length)];
+const selectedWords = words[Math.floor(Math.random() * words.length)];
 
 // we need two arrays to store both the correct  and incorrect letters
 

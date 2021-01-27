@@ -16,7 +16,7 @@ const words = [
   "codebook",
   "javascript",
 ];
-let selectedWords = words[Math.floor(Math.random() * words.length)];
+const selectedWords = words[Math.floor(Math.random() * words.length)];
 
 // we need two arrays to store both the correct  and incorrect letters
 
@@ -77,9 +77,8 @@ function showNotification() {
   }, 2000);
 }
 
-// update the wrong info
 function updateWrongLettersEl() {
-  // Display  the wrong letters
+  // update the wrong letters
   wrongLettersEL.innerHTML = `${wrongLetters.length > 0 ? "<p>Wrong</p>" : ""}
     ${wrongLetters.map((letter) => `<span>${letter}</span>`)}`;
 
@@ -88,32 +87,9 @@ function updateWrongLettersEl() {
     const errors = wrongLetters.length;
     if (index < errors) {
       part.style.display = "block";
-    } else {
-      part.style.display = "none";
+    }else{
+        
     }
   });
-
-  //   check if lost
-  if (wrongLetters.length === figureParts.length) {
-    finalMessage.innerText = "Sorry You Have Lost. ☹️";
-    popUp.style.display = "flex";
-  }
 }
-
-// play game again
-
-playAgain.addEventListener("click", () => {
-  // we have to empty the arrays
-  correctLetters.splice(0);
-  wrongLetters.splice(0);
-  //
-  selectedWords = words[Math.floor(Math.random() * words.length)];
-
-  displayWord();
-
-  updateWrongLettersEl();
-
-  popUp.style.display = "none";
-});
-
 displayWord();

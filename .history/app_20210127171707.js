@@ -16,7 +16,7 @@ const words = [
   "codebook",
   "javascript",
 ];
-let selectedWords = words[Math.floor(Math.random() * words.length)];
+const selectedWords = words[Math.floor(Math.random() * words.length)];
 
 // we need two arrays to store both the correct  and incorrect letters
 
@@ -106,14 +106,9 @@ playAgain.addEventListener("click", () => {
   // we have to empty the arrays
   correctLetters.splice(0);
   wrongLetters.splice(0);
-  //
   selectedWords = words[Math.floor(Math.random() * words.length)];
-
-  displayWord();
-
   updateWrongLettersEl();
-
-  popUp.style.display = "none";
+  popUp.style.display
 });
 
 displayWord();

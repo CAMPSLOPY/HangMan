@@ -34,8 +34,9 @@ h1 {
 .figure-part {
   display: none;
 }
-.liner{
-  background-color: green;
+.circle{
+  fill: red;
+  outline: blue;
 }
 .wrong-letters-container {
   position: absolute;
@@ -84,7 +85,7 @@ h1 {
 }
 
 .popup {
-  background-color: rgb(255, 0, 0);
+  background-color: #2980b9;
   border-radius: 5px;
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;

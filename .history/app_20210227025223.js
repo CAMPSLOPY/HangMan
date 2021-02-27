@@ -40,7 +40,7 @@ function displayWord() {
   if (innerword === selectedWords) {
     finalMessage.innerText = "Congratulations! You Won 🤑";
     popUp.style.display = "flex";
-    popCard.style.backgroundColor = "green";
+    popCa.style.backgroundColor = "green";
   }
 }
 

@@ -5,7 +5,7 @@ const popUp = document.getElementById("popup-container");
 const notification = document.getElementById("notification-container");
 const finalMessage = document.getElementById("final-message");
 const figureParts = document.querySelectorAll(".figure-part");
-const popCard = document.querySelector(".popup");
+
 // initiating the random game numbers and also its length
 const words = [
   "application",
@@ -26,11 +26,7 @@ const correctLetters = [];
 //  SHOW HIDDEN WORDS
 function displayWord() {
   wordEl.innerHTML = `${selectedWords
-    .split("")
-    .map(
-      (letter) => `<span class="letter">${
-        correctLetters.includes(letter) ? letter : ""
-      }
+    .split("").map((letter) => `<span class="letter">${correctLetters.includes(letter) ? letter : ""}
     </span>`
     )
     .join("")}`;
@@ -40,7 +36,7 @@ function displayWord() {
   if (innerword === selectedWords) {
     finalMessage.innerText = "Congratulations! You Won 🤑";
     popUp.style.display = "flex";
-    popCard.style.backgroundColor = "green";
+    popUp.style.back
   }
 }
 

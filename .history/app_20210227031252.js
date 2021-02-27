@@ -43,7 +43,7 @@ function displayWord() {
     popCard.style.backgroundColor = "green";
     confetti.start(400, 50, 150);
   }
-}
+}`6`
 
 // The KeyDown event (we will be able to press any keys on our keyboard)
 window.addEventListener("keydown", function (e) {

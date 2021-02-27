@@ -41,7 +41,7 @@ function displayWord() {
     finalMessage.innerText = "Congratulations! You Won 🤑";
     popUp.style.display = "flex";
     popCard.style.backgroundColor = "green";
-    confetti.start(400, 50, 150);
+    confetti.start()
   }
 }
 

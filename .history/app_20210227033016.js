@@ -100,7 +100,7 @@ function updateWrongLettersEl() {
   if (wrongLetters.length === figureParts.length) {
     finalMessage.innerText = "Sorry You Have Lost. ☹️";
     popUp.style.display = "flex";
-    popCard.style.backgroundColor = "red";
+    popCard.style.backgroundColor = "green";
   }
 }
 

@@ -26,7 +26,8 @@ const correctLetters = [];
 //  SHOW HIDDEN WORDS
 function displayWord() {
   wordEl.innerHTML = `${selectedWords
-    .split("").map((letter) => `<span class="letter">${correctLetters.includes(letter) ? letter : ""}
+    .split("").map((letter) => `<span class="letter">
+    ${correctLetters.includes(letter) ? letter : ""}
     </span>`
     )
     .join("")}`;

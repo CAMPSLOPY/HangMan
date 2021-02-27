@@ -15,10 +15,10 @@ const words = [
   "messi",
   "codebook",
   "javascript",
-  "telecommunication",
-  "api",
-  "proxy",
-  "administration",
+   "telecommunication",
+  'api',
+  'proxy',
+  'administration',
 ];
 let selectedWords = words[Math.floor(Math.random() * words.length)];
 

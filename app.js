@@ -81,7 +81,7 @@ function showNotification() {
   //   set Timeout takes in a function and also a time duration
   setTimeout(() => {
     notification.classList.remove("show");
-  }, 2000);
+  }, 500);
 }
 
 // update the wrong info
